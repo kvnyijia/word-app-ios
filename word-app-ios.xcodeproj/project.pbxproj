@@ -14,6 +14,10 @@
 		3956A9A62B0897C6002CA5D0 /* word_app_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956A9A52B0897C6002CA5D0 /* word_app_iosTests.swift */; };
 		3956A9B02B0897C6002CA5D0 /* word_app_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956A9AF2B0897C6002CA5D0 /* word_app_iosUITests.swift */; };
 		3956A9B22B0897C6002CA5D0 /* word_app_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956A9B12B0897C6002CA5D0 /* word_app_iosUITestsLaunchTests.swift */; };
+		3956A9BF2B089C8D002CA5D0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956A9BE2B089C8D002CA5D0 /* HomeView.swift */; };
+		3956A9C12B089CB9002CA5D0 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956A9C02B089CB9002CA5D0 /* MeView.swift */; };
+		3956A9C52B08B023002CA5D0 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956A9C42B08B023002CA5D0 /* UserApi.swift */; };
+		3956A9C82B08B7AC002CA5D0 /* LoginUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956A9C72B08B7AC002CA5D0 /* LoginUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		3956A9AB2B0897C6002CA5D0 /* word-app-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "word-app-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3956A9AF2B0897C6002CA5D0 /* word_app_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = word_app_iosUITests.swift; sourceTree = "<group>"; };
 		3956A9B12B0897C6002CA5D0 /* word_app_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = word_app_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3956A9BE2B089C8D002CA5D0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3956A9C02B089CB9002CA5D0 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		3956A9C42B08B023002CA5D0 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		3956A9C72B08B7AC002CA5D0 /* LoginUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,8 @@
 		3956A9932B0897C3002CA5D0 /* word-app-ios */ = {
 			isa = PBXGroup;
 			children = (
+				3956A9C32B08AFE4002CA5D0 /* utils */,
+				3956A9C22B08AF48002CA5D0 /* views */,
 				3956A9942B0897C3002CA5D0 /* word_app_iosApp.swift */,
 				3956A9962B0897C3002CA5D0 /* ContentView.swift */,
 				3956A9982B0897C6002CA5D0 /* Assets.xcassets */,
@@ -125,6 +135,32 @@
 				3956A9B12B0897C6002CA5D0 /* word_app_iosUITestsLaunchTests.swift */,
 			);
 			path = "word-app-iosUITests";
+			sourceTree = "<group>";
+		};
+		3956A9C22B08AF48002CA5D0 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				3956A9BE2B089C8D002CA5D0 /* HomeView.swift */,
+				3956A9C02B089CB9002CA5D0 /* MeView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		3956A9C32B08AFE4002CA5D0 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				3956A9C62B08B775002CA5D0 /* user */,
+				3956A9C42B08B023002CA5D0 /* UserApi.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		3956A9C62B08B775002CA5D0 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				3956A9C72B08B7AC002CA5D0 /* LoginUser.swift */,
+			);
+			path = user;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3956A9C82B08B7AC002CA5D0 /* LoginUser.swift in Sources */,
+				3956A9C12B089CB9002CA5D0 /* MeView.swift in Sources */,
+				3956A9C52B08B023002CA5D0 /* UserApi.swift in Sources */,
+				3956A9BF2B089C8D002CA5D0 /* HomeView.swift in Sources */,
 				3956A9972B0897C3002CA5D0 /* ContentView.swift in Sources */,
 				3956A9952B0897C3002CA5D0 /* word_app_iosApp.swift in Sources */,
 			);
