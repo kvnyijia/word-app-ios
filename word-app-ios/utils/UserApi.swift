@@ -5,7 +5,7 @@ class UserApi {
     let url = URL(string: "http://localhost:8080/users/login")!
     
     func loginUser(completion: @escaping (LoginUser) -> ()) {
-        let json: [String: Any] = ["username": "???", "password": "???"]
+        let json: [String: Any] = ["username": Config().username, "password": Config().password]
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         var req = URLRequest(url: url)
         req.httpMethod = "POST"
