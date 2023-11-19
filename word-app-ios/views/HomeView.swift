@@ -2,38 +2,41 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State var get_tables_res: GetTables?
+    @State
+    var get_tables_res: GetTables?
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            Text("Home")
-                .font(.title)
-                .fontWeight(.black)
-            HStack {
-                Text("Your table")
-                Button(action: handleClick) {
-                    Label("Create Table", systemImage: "arrow.up")
-                }
-            }
-            VStack {
-                Text(get_tables_res?.owner ?? "cannot fetch")
-                if let tables = get_tables_res?.tables as? [Table] {
-                    ForEach(tables) { t in
-                        Text(t.name)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                Text("Home")
+                    .font(.title)
+                    .fontWeight(.black)
+                HStack(spacing: 80) {
+                    Text("Your table")
+                    Button("Create Table") {
+                        print("create...")
                     }
+                    .buttonStyle(ActionButton())
                 }
-                
-            }.onAppear() {
-                TableApi().getTables { (res) in
-                    self.get_tables_res = res
+                VStack(alignment: .leading, spacing: 5) {
+                    if let tables = get_tables_res?.tables as? [Table] {
+                        ForEach(tables) { t in
+                            Button {
+                                print("hehehehe")
+                            } label: {
+                                Text(t.name).frame(maxWidth: .infinity)
+                            }
+                            .buttonStyle(ItemButton())
+                        }
+                    }
+                }.onAppear() {
+                    TableApi().getTables { (res) in
+                        self.get_tables_res = res
+                    }
                 }
             }
         }
-    }
-    
-    var cnt = 0
-    func handleClick() {
-        print("cnt = \(cnt)")
+        .frame(maxWidth: 300)
     }
 }
 
