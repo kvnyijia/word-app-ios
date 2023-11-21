@@ -24,6 +24,9 @@
 		39608E3C2B09AC5700071EEB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39608E3B2B09AC5700071EEB /* Config.swift */; };
 		39608E3F2B09B19400071EEB /* ItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39608E3E2B09B19400071EEB /* ItemButton.swift */; };
 		39608E412B09B50000071EEB /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39608E402B09B50000071EEB /* ActionButton.swift */; };
+		39D76C0A2B0C88F600E23D65 /* WordApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C092B0C88F600E23D65 /* WordApi.swift */; };
+		39D76C0C2B0C8B0100E23D65 /* WordStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */; };
+		39D76C0E2B0C96A000E23D65 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C0D2B0C96A000E23D65 /* TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		39608E3B2B09AC5700071EEB /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		39608E3E2B09B19400071EEB /* ItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemButton.swift; sourceTree = "<group>"; };
 		39608E402B09B50000071EEB /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		39D76C092B0C88F600E23D65 /* WordApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordApi.swift; sourceTree = "<group>"; };
+		39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordStruct.swift; sourceTree = "<group>"; };
+		39D76C0D2B0C96A000E23D65 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				3956A9BE2B089C8D002CA5D0 /* HomeView.swift */,
+				39D76C0D2B0C96A000E23D65 /* TableView.swift */,
 				3956A9C02B089CB9002CA5D0 /* MeView.swift */,
 				39327AEC2B0AA674002090C6 /* CreateTableView.swift */,
 			);
@@ -168,6 +175,8 @@
 				3956A9C42B08B023002CA5D0 /* UserApi.swift */,
 				39608E3B2B09AC5700071EEB /* Config.swift */,
 				3956A9C92B097457002CA5D0 /* TableApi.swift */,
+				39D76C092B0C88F600E23D65 /* WordApi.swift */,
+				39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -328,7 +337,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3956A9C82B08B7AC002CA5D0 /* LoginUser.swift in Sources */,
+				39D76C0E2B0C96A000E23D65 /* TableView.swift in Sources */,
 				3956A9C12B089CB9002CA5D0 /* MeView.swift in Sources */,
+				39D76C0A2B0C88F600E23D65 /* WordApi.swift in Sources */,
 				39608E3F2B09B19400071EEB /* ItemButton.swift in Sources */,
 				39608E412B09B50000071EEB /* ActionButton.swift in Sources */,
 				39608E3C2B09AC5700071EEB /* Config.swift in Sources */,
@@ -336,6 +347,7 @@
 				3956A9BF2B089C8D002CA5D0 /* HomeView.swift in Sources */,
 				3956A9CA2B097458002CA5D0 /* TableApi.swift in Sources */,
 				3956A9CC2B097552002CA5D0 /* GetTables.swift in Sources */,
+				39D76C0C2B0C8B0100E23D65 /* WordStruct.swift in Sources */,
 				3956A9972B0897C3002CA5D0 /* ContentView.swift in Sources */,
 				3956A9952B0897C3002CA5D0 /* word_app_iosApp.swift in Sources */,
 				39327AED2B0AA674002090C6 /* CreateTableView.swift in Sources */,
