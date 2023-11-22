@@ -27,6 +27,7 @@
 		39D76C0A2B0C88F600E23D65 /* WordApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C092B0C88F600E23D65 /* WordApi.swift */; };
 		39D76C0C2B0C8B0100E23D65 /* WordStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */; };
 		39D76C0E2B0C96A000E23D65 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C0D2B0C96A000E23D65 /* TableView.swift */; };
+		39D76C102B0C9C0000E23D65 /* CreateWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C0F2B0C9C0000E23D65 /* CreateWordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		39D76C092B0C88F600E23D65 /* WordApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordApi.swift; sourceTree = "<group>"; };
 		39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordStruct.swift; sourceTree = "<group>"; };
 		39D76C0D2B0C96A000E23D65 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		39D76C0F2B0C9C0000E23D65 /* CreateWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				39D76C0D2B0C96A000E23D65 /* TableView.swift */,
 				3956A9C02B089CB9002CA5D0 /* MeView.swift */,
 				39327AEC2B0AA674002090C6 /* CreateTableView.swift */,
+				39D76C0F2B0C9C0000E23D65 /* CreateWordView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				3956A9C52B08B023002CA5D0 /* UserApi.swift in Sources */,
 				3956A9BF2B089C8D002CA5D0 /* HomeView.swift in Sources */,
 				3956A9CA2B097458002CA5D0 /* TableApi.swift in Sources */,
+				39D76C102B0C9C0000E23D65 /* CreateWordView.swift in Sources */,
 				3956A9CC2B097552002CA5D0 /* GetTables.swift in Sources */,
 				39D76C0C2B0C8B0100E23D65 /* WordStruct.swift in Sources */,
 				3956A9972B0897C3002CA5D0 /* ContentView.swift in Sources */,
