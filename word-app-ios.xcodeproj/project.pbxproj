@@ -122,11 +122,11 @@
 		3956A9932B0897C3002CA5D0 /* word-app-ios */ = {
 			isa = PBXGroup;
 			children = (
-				39608E3D2B09B16A00071EEB /* components */,
-				3956A9C32B08AFE4002CA5D0 /* utils */,
-				3956A9C22B08AF48002CA5D0 /* views */,
-				3956A9942B0897C3002CA5D0 /* word_app_iosApp.swift */,
-				3956A9962B0897C3002CA5D0 /* ContentView.swift */,
+				39D76C562B0EC78F00E23D65 /* Models */,
+				39D76C552B0EC6DE00E23D65 /* Lifecycle */,
+				39608E3D2B09B16A00071EEB /* Components */,
+				3956A9C32B08AFE4002CA5D0 /* Utils */,
+				3956A9C22B08AF48002CA5D0 /* Views */,
 				3956A9982B0897C6002CA5D0 /* Assets.xcassets */,
 				3956A99A2B0897C6002CA5D0 /* Preview Content */,
 			);
@@ -158,55 +158,55 @@
 			path = "word-app-iosUITests";
 			sourceTree = "<group>";
 		};
-		3956A9C22B08AF48002CA5D0 /* views */ = {
+		3956A9C22B08AF48002CA5D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3956A9962B0897C3002CA5D0 /* ContentView.swift */,
 				3956A9BE2B089C8D002CA5D0 /* HomeView.swift */,
 				39D76C0D2B0C96A000E23D65 /* TableView.swift */,
 				3956A9C02B089CB9002CA5D0 /* MeView.swift */,
 				39327AEC2B0AA674002090C6 /* CreateTableView.swift */,
 				39D76C0F2B0C9C0000E23D65 /* CreateWordView.swift */,
 			);
-			path = views;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		3956A9C32B08AFE4002CA5D0 /* utils */ = {
+		3956A9C32B08AFE4002CA5D0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				3956A9CD2B097559002CA5D0 /* table */,
-				3956A9C62B08B775002CA5D0 /* user */,
 				3956A9C42B08B023002CA5D0 /* UserApi.swift */,
 				39608E3B2B09AC5700071EEB /* Config.swift */,
 				3956A9C92B097457002CA5D0 /* TableApi.swift */,
 				39D76C092B0C88F600E23D65 /* WordApi.swift */,
-				39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */,
 			);
-			path = utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
-		3956A9C62B08B775002CA5D0 /* user */ = {
-			isa = PBXGroup;
-			children = (
-				3956A9C72B08B7AC002CA5D0 /* LoginUser.swift */,
-			);
-			path = user;
-			sourceTree = "<group>";
-		};
-		3956A9CD2B097559002CA5D0 /* table */ = {
-			isa = PBXGroup;
-			children = (
-				3956A9CB2B097552002CA5D0 /* GetTables.swift */,
-			);
-			path = table;
-			sourceTree = "<group>";
-		};
-		39608E3D2B09B16A00071EEB /* components */ = {
+		39608E3D2B09B16A00071EEB /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				39608E3E2B09B19400071EEB /* ItemButton.swift */,
 				39608E402B09B50000071EEB /* ActionButton.swift */,
 			);
-			path = components;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		39D76C552B0EC6DE00E23D65 /* Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				3956A9942B0897C3002CA5D0 /* word_app_iosApp.swift */,
+			);
+			path = Lifecycle;
+			sourceTree = "<group>";
+		};
+		39D76C562B0EC78F00E23D65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3956A9CB2B097552002CA5D0 /* GetTables.swift */,
+				3956A9C72B08B7AC002CA5D0 /* LoginUser.swift */,
+				39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
