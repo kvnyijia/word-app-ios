@@ -2,10 +2,8 @@ import Foundation
 
 class WordApi {
     
-    let url = "http://localhost:8080/words"
-    
     func getWords(table_id: Int, completion: @escaping (GetWords)->()) {
-        var req = URLRequest(url: URL(string: "\(url)?table_id=\(table_id)")!)
+        var req = URLRequest(url: URL(string: "\(Config().api_url)/words?table_id=\(table_id)")!)
         req.httpMethod = "GET"
         req.addValue("application/json", forHTTPHeaderField: "Content-Type")
         req.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -31,7 +29,7 @@ class WordApi {
             "picture_url": picture_url
         ]
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
-        var req = URLRequest(url: URL(string: url)!)
+        var req = URLRequest(url: URL(string: "\(Config().api_url)/words")!)
         req.httpMethod = "POST"
         req.httpBody = jsonData
         req.addValue("application/json", forHTTPHeaderField: "Content-Type")

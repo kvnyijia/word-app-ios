@@ -2,10 +2,8 @@ import Foundation
 
 class TableApi {
     
-    let url = "http://localhost:8080/tables"
-    
     func getTables(completion: @escaping (GetTables)->()) {
-        var req = URLRequest(url: URL(string: "\(url)?owner=\(Config().username)")!)
+        var req = URLRequest(url: URL(string: "\(Config().api_url)/tables?owner=\(Config().username)")!)
         req.httpMethod = "GET"
         req.addValue("application/json", forHTTPHeaderField: "Content-Type")
         req.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -26,7 +24,7 @@ class TableApi {
     func createTable(name: String, completion: @escaping (Bool)->()) {
         let json: [String: Any] = ["name": name, "owner": Config().username]
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
-        var req = URLRequest(url: URL(string: url)!)
+        var req = URLRequest(url: URL(string: "\(Config().api_url)/tables")!)
         req.httpMethod = "POST"
         req.httpBody = jsonData
         req.addValue("application/json", forHTTPHeaderField: "Content-Type")
