@@ -2,8 +2,8 @@ import Foundation
 
 class UserApi {
     
-    func loginUser(completion: @escaping (LoginUser) -> ()) {
-        let json: [String: Any] = ["username": Config().username, "password": Config().password]
+    func loginUser(username: String, password: String, completion: @escaping (LoginUser) -> ()) {
+        let json: [String: Any] = ["username": username, "password": password]
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         var req = URLRequest(url: URL(string: "\(Config().api_url)/users/login")!)
         req.httpMethod = "POST"

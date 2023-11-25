@@ -11,7 +11,7 @@ struct MeView: View {
                 .fontWeight(.black)
             Text(login_user?.user.username ?? "not login")
         }.onAppear() {
-            UserApi().loginUser { (login_user) in
+            UserApi().loginUser(username: Config().username, password: Config().password) { (login_user) in
                 self.login_user = login_user
             }
         }

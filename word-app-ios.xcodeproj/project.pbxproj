@@ -24,10 +24,17 @@
 		39608E3C2B09AC5700071EEB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39608E3B2B09AC5700071EEB /* Config.swift */; };
 		39608E3F2B09B19400071EEB /* ItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39608E3E2B09B19400071EEB /* ItemButton.swift */; };
 		39608E412B09B50000071EEB /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39608E402B09B50000071EEB /* ActionButton.swift */; };
+		39701F682B1198780065FD92 /* LoginUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39701F672B1198780065FD92 /* LoginUserViewModel.swift */; };
+		39701F6A2B11997B0065FD92 /* LoginUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39701F692B11997B0065FD92 /* LoginUserView.swift */; };
+		39701F6C2B11A0B80065FD92 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39701F6B2B11A0B80065FD92 /* Auth.swift */; };
+		39701F6E2B11A5B70065FD92 /* AuthStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39701F6D2B11A5B70065FD92 /* AuthStruct.swift */; };
+		39701F702B11A6E50065FD92 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39701F6F2B11A6E50065FD92 /* AppView.swift */; };
+		39701F722B11B2970065FD92 /* SubContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39701F712B11B2970065FD92 /* SubContentView.swift */; };
 		39D76C0A2B0C88F600E23D65 /* WordApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C092B0C88F600E23D65 /* WordApi.swift */; };
 		39D76C0C2B0C8B0100E23D65 /* WordStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */; };
 		39D76C0E2B0C96A000E23D65 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C0D2B0C96A000E23D65 /* TableView.swift */; };
 		39D76C102B0C9C0000E23D65 /* CreateWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C0F2B0C9C0000E23D65 /* CreateWordView.swift */; };
+		FEEF67BE0070FAE5E983ABCD /* Pods_word_app_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D23974D2AAD1748730B575 /* Pods_word_app_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,10 +75,19 @@
 		39608E3B2B09AC5700071EEB /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		39608E3E2B09B19400071EEB /* ItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemButton.swift; sourceTree = "<group>"; };
 		39608E402B09B50000071EEB /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		39701F672B1198780065FD92 /* LoginUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserViewModel.swift; sourceTree = "<group>"; };
+		39701F692B11997B0065FD92 /* LoginUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserView.swift; sourceTree = "<group>"; };
+		39701F6B2B11A0B80065FD92 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		39701F6D2B11A5B70065FD92 /* AuthStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStruct.swift; sourceTree = "<group>"; };
+		39701F6F2B11A6E50065FD92 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		39701F712B11B2970065FD92 /* SubContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubContentView.swift; sourceTree = "<group>"; };
 		39D76C092B0C88F600E23D65 /* WordApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordApi.swift; sourceTree = "<group>"; };
 		39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordStruct.swift; sourceTree = "<group>"; };
 		39D76C0D2B0C96A000E23D65 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		39D76C0F2B0C9C0000E23D65 /* CreateWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWordView.swift; sourceTree = "<group>"; };
+		3AC88E61A8367A3308105572 /* Pods-word-app-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-word-app-ios.release.xcconfig"; path = "Target Support Files/Pods-word-app-ios/Pods-word-app-ios.release.xcconfig"; sourceTree = "<group>"; };
+		B9D23974D2AAD1748730B575 /* Pods_word_app_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_word_app_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C17BA8BF516F0BC569D2FEAB /* Pods-word-app-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-word-app-ios.debug.xcconfig"; path = "Target Support Files/Pods-word-app-ios/Pods-word-app-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEEF67BE0070FAE5E983ABCD /* Pods_word_app_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +123,8 @@
 				3956A9A42B0897C6002CA5D0 /* word-app-iosTests */,
 				3956A9AE2B0897C6002CA5D0 /* word-app-iosUITests */,
 				3956A9922B0897C3002CA5D0 /* Products */,
+				A098088E2FF64DACEDF4C673 /* Pods */,
+				D62A5626496D551C0E1DEE86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +141,7 @@
 		3956A9932B0897C3002CA5D0 /* word-app-ios */ = {
 			isa = PBXGroup;
 			children = (
+				39701F662B1198330065FD92 /* ViewModels */,
 				39D76C562B0EC78F00E23D65 /* Models */,
 				39D76C552B0EC6DE00E23D65 /* Lifecycle */,
 				39608E3D2B09B16A00071EEB /* Components */,
@@ -162,11 +182,14 @@
 			isa = PBXGroup;
 			children = (
 				3956A9962B0897C3002CA5D0 /* ContentView.swift */,
+				39701F712B11B2970065FD92 /* SubContentView.swift */,
+				39701F6F2B11A6E50065FD92 /* AppView.swift */,
 				3956A9BE2B089C8D002CA5D0 /* HomeView.swift */,
 				39D76C0D2B0C96A000E23D65 /* TableView.swift */,
 				3956A9C02B089CB9002CA5D0 /* MeView.swift */,
 				39327AEC2B0AA674002090C6 /* CreateTableView.swift */,
 				39D76C0F2B0C9C0000E23D65 /* CreateWordView.swift */,
+				39701F692B11997B0065FD92 /* LoginUserView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +201,7 @@
 				39608E3B2B09AC5700071EEB /* Config.swift */,
 				3956A9C92B097457002CA5D0 /* TableApi.swift */,
 				39D76C092B0C88F600E23D65 /* WordApi.swift */,
+				39701F6B2B11A0B80065FD92 /* Auth.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -189,6 +213,14 @@
 				39608E402B09B50000071EEB /* ActionButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		39701F662B1198330065FD92 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				39701F672B1198780065FD92 /* LoginUserViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		39D76C552B0EC6DE00E23D65 /* Lifecycle */ = {
@@ -205,8 +237,26 @@
 				3956A9CB2B097552002CA5D0 /* GetTables.swift */,
 				3956A9C72B08B7AC002CA5D0 /* LoginUser.swift */,
 				39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */,
+				39701F6D2B11A5B70065FD92 /* AuthStruct.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A098088E2FF64DACEDF4C673 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C17BA8BF516F0BC569D2FEAB /* Pods-word-app-ios.debug.xcconfig */,
+				3AC88E61A8367A3308105572 /* Pods-word-app-ios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D62A5626496D551C0E1DEE86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9D23974D2AAD1748730B575 /* Pods_word_app_ios.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3956A9B52B0897C6002CA5D0 /* Build configuration list for PBXNativeTarget "word-app-ios" */;
 			buildPhases = (
+				DF21B18AAE03C91C397D02CE /* [CP] Check Pods Manifest.lock */,
 				3956A98D2B0897C3002CA5D0 /* Sources */,
 				3956A98E2B0897C3002CA5D0 /* Frameworks */,
 				3956A98F2B0897C3002CA5D0 /* Resources */,
+				2CD27CC05DD54B38CBD1E343 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,6 +386,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CD27CC05DD54B38CBD1E343 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-word-app-ios/Pods-word-app-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-word-app-ios/Pods-word-app-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-word-app-ios/Pods-word-app-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF21B18AAE03C91C397D02CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-word-app-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3956A98D2B0897C3002CA5D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -341,9 +435,12 @@
 			files = (
 				3956A9C82B08B7AC002CA5D0 /* LoginUser.swift in Sources */,
 				39D76C0E2B0C96A000E23D65 /* TableView.swift in Sources */,
+				39701F6E2B11A5B70065FD92 /* AuthStruct.swift in Sources */,
+				39701F722B11B2970065FD92 /* SubContentView.swift in Sources */,
 				3956A9C12B089CB9002CA5D0 /* MeView.swift in Sources */,
 				39D76C0A2B0C88F600E23D65 /* WordApi.swift in Sources */,
 				39608E3F2B09B19400071EEB /* ItemButton.swift in Sources */,
+				39701F6C2B11A0B80065FD92 /* Auth.swift in Sources */,
 				39608E412B09B50000071EEB /* ActionButton.swift in Sources */,
 				39608E3C2B09AC5700071EEB /* Config.swift in Sources */,
 				3956A9C52B08B023002CA5D0 /* UserApi.swift in Sources */,
@@ -351,7 +448,10 @@
 				3956A9CA2B097458002CA5D0 /* TableApi.swift in Sources */,
 				39D76C102B0C9C0000E23D65 /* CreateWordView.swift in Sources */,
 				3956A9CC2B097552002CA5D0 /* GetTables.swift in Sources */,
+				39701F682B1198780065FD92 /* LoginUserViewModel.swift in Sources */,
+				39701F6A2B11997B0065FD92 /* LoginUserView.swift in Sources */,
 				39D76C0C2B0C8B0100E23D65 /* WordStruct.swift in Sources */,
+				39701F702B11A6E50065FD92 /* AppView.swift in Sources */,
 				3956A9972B0897C3002CA5D0 /* ContentView.swift in Sources */,
 				3956A9952B0897C3002CA5D0 /* word_app_iosApp.swift in Sources */,
 				39327AED2B0AA674002090C6 /* CreateTableView.swift in Sources */,
@@ -507,6 +607,7 @@
 		};
 		3956A9B62B0897C6002CA5D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C17BA8BF516F0BC569D2FEAB /* Pods-word-app-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -536,6 +637,7 @@
 		};
 		3956A9B72B0897C6002CA5D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AC88E61A8367A3308105572 /* Pods-word-app-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
