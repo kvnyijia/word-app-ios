@@ -2,12 +2,10 @@ import Foundation
 
 class UserApi {
     
-    let url = URL(string: "http://localhost:8080/users/login")!
-    
     func loginUser(completion: @escaping (LoginUser) -> ()) {
         let json: [String: Any] = ["username": Config().username, "password": Config().password]
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
-        var req = URLRequest(url: url)
+        var req = URLRequest(url: URL(string: "\(Config().api_url)/users/login")!)
         req.httpMethod = "POST"
         req.httpBody = jsonData
         let task = URLSession.shared.dataTask(with: req) { data, res, err in

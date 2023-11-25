@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39327AED2B0AA674002090C6 /* CreateTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39327AEC2B0AA674002090C6 /* CreateTableView.swift */; };
 		3956A9952B0897C3002CA5D0 /* word_app_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956A9942B0897C3002CA5D0 /* word_app_iosApp.swift */; };
 		3956A9972B0897C3002CA5D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956A9962B0897C3002CA5D0 /* ContentView.swift */; };
 		3956A9992B0897C6002CA5D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3956A9982B0897C6002CA5D0 /* Assets.xcassets */; };
@@ -23,6 +24,10 @@
 		39608E3C2B09AC5700071EEB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39608E3B2B09AC5700071EEB /* Config.swift */; };
 		39608E3F2B09B19400071EEB /* ItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39608E3E2B09B19400071EEB /* ItemButton.swift */; };
 		39608E412B09B50000071EEB /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39608E402B09B50000071EEB /* ActionButton.swift */; };
+		39D76C0A2B0C88F600E23D65 /* WordApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C092B0C88F600E23D65 /* WordApi.swift */; };
+		39D76C0C2B0C8B0100E23D65 /* WordStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */; };
+		39D76C0E2B0C96A000E23D65 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C0D2B0C96A000E23D65 /* TableView.swift */; };
+		39D76C102B0C9C0000E23D65 /* CreateWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C0F2B0C9C0000E23D65 /* CreateWordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39327AEC2B0AA674002090C6 /* CreateTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTableView.swift; sourceTree = "<group>"; };
 		3956A9912B0897C3002CA5D0 /* word-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "word-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3956A9942B0897C3002CA5D0 /* word_app_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = word_app_iosApp.swift; sourceTree = "<group>"; };
 		3956A9962B0897C3002CA5D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +68,10 @@
 		39608E3B2B09AC5700071EEB /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		39608E3E2B09B19400071EEB /* ItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemButton.swift; sourceTree = "<group>"; };
 		39608E402B09B50000071EEB /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		39D76C092B0C88F600E23D65 /* WordApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordApi.swift; sourceTree = "<group>"; };
+		39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordStruct.swift; sourceTree = "<group>"; };
+		39D76C0D2B0C96A000E23D65 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		39D76C0F2B0C9C0000E23D65 /* CreateWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +122,11 @@
 		3956A9932B0897C3002CA5D0 /* word-app-ios */ = {
 			isa = PBXGroup;
 			children = (
-				39608E3D2B09B16A00071EEB /* components */,
-				3956A9C32B08AFE4002CA5D0 /* utils */,
-				3956A9C22B08AF48002CA5D0 /* views */,
-				3956A9942B0897C3002CA5D0 /* word_app_iosApp.swift */,
-				3956A9962B0897C3002CA5D0 /* ContentView.swift */,
+				39D76C562B0EC78F00E23D65 /* Models */,
+				39D76C552B0EC6DE00E23D65 /* Lifecycle */,
+				39608E3D2B09B16A00071EEB /* Components */,
+				3956A9C32B08AFE4002CA5D0 /* Utils */,
+				3956A9C22B08AF48002CA5D0 /* Views */,
 				3956A9982B0897C6002CA5D0 /* Assets.xcassets */,
 				3956A99A2B0897C6002CA5D0 /* Preview Content */,
 			);
@@ -148,50 +158,55 @@
 			path = "word-app-iosUITests";
 			sourceTree = "<group>";
 		};
-		3956A9C22B08AF48002CA5D0 /* views */ = {
+		3956A9C22B08AF48002CA5D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3956A9962B0897C3002CA5D0 /* ContentView.swift */,
 				3956A9BE2B089C8D002CA5D0 /* HomeView.swift */,
+				39D76C0D2B0C96A000E23D65 /* TableView.swift */,
 				3956A9C02B089CB9002CA5D0 /* MeView.swift */,
+				39327AEC2B0AA674002090C6 /* CreateTableView.swift */,
+				39D76C0F2B0C9C0000E23D65 /* CreateWordView.swift */,
 			);
-			path = views;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		3956A9C32B08AFE4002CA5D0 /* utils */ = {
+		3956A9C32B08AFE4002CA5D0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				3956A9CD2B097559002CA5D0 /* table */,
-				3956A9C62B08B775002CA5D0 /* user */,
 				3956A9C42B08B023002CA5D0 /* UserApi.swift */,
 				39608E3B2B09AC5700071EEB /* Config.swift */,
 				3956A9C92B097457002CA5D0 /* TableApi.swift */,
+				39D76C092B0C88F600E23D65 /* WordApi.swift */,
 			);
-			path = utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
-		3956A9C62B08B775002CA5D0 /* user */ = {
-			isa = PBXGroup;
-			children = (
-				3956A9C72B08B7AC002CA5D0 /* LoginUser.swift */,
-			);
-			path = user;
-			sourceTree = "<group>";
-		};
-		3956A9CD2B097559002CA5D0 /* table */ = {
-			isa = PBXGroup;
-			children = (
-				3956A9CB2B097552002CA5D0 /* GetTables.swift */,
-			);
-			path = table;
-			sourceTree = "<group>";
-		};
-		39608E3D2B09B16A00071EEB /* components */ = {
+		39608E3D2B09B16A00071EEB /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				39608E3E2B09B19400071EEB /* ItemButton.swift */,
 				39608E402B09B50000071EEB /* ActionButton.swift */,
 			);
-			path = components;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		39D76C552B0EC6DE00E23D65 /* Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				3956A9942B0897C3002CA5D0 /* word_app_iosApp.swift */,
+			);
+			path = Lifecycle;
+			sourceTree = "<group>";
+		};
+		39D76C562B0EC78F00E23D65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3956A9CB2B097552002CA5D0 /* GetTables.swift */,
+				3956A9C72B08B7AC002CA5D0 /* LoginUser.swift */,
+				39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,16 +340,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3956A9C82B08B7AC002CA5D0 /* LoginUser.swift in Sources */,
+				39D76C0E2B0C96A000E23D65 /* TableView.swift in Sources */,
 				3956A9C12B089CB9002CA5D0 /* MeView.swift in Sources */,
+				39D76C0A2B0C88F600E23D65 /* WordApi.swift in Sources */,
 				39608E3F2B09B19400071EEB /* ItemButton.swift in Sources */,
 				39608E412B09B50000071EEB /* ActionButton.swift in Sources */,
 				39608E3C2B09AC5700071EEB /* Config.swift in Sources */,
 				3956A9C52B08B023002CA5D0 /* UserApi.swift in Sources */,
 				3956A9BF2B089C8D002CA5D0 /* HomeView.swift in Sources */,
 				3956A9CA2B097458002CA5D0 /* TableApi.swift in Sources */,
+				39D76C102B0C9C0000E23D65 /* CreateWordView.swift in Sources */,
 				3956A9CC2B097552002CA5D0 /* GetTables.swift in Sources */,
+				39D76C0C2B0C8B0100E23D65 /* WordStruct.swift in Sources */,
 				3956A9972B0897C3002CA5D0 /* ContentView.swift in Sources */,
 				3956A9952B0897C3002CA5D0 /* word_app_iosApp.swift in Sources */,
+				39327AED2B0AA674002090C6 /* CreateTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -475,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
