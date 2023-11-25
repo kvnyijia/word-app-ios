@@ -18,18 +18,15 @@ struct LoginUserView: View {
                 )
                 .autocapitalization(.none)
                 .disableAutocorrection(true)
-                .padding(.top, 20)
-                
-                Divider()
+                .padding(.bottom, 20)
+                .textFieldStyle(WhiteBorder())
                 
                 SecureField(
                     //"Login.PasswordField.Title".localized,
                     "Password",
                     text: $viewModel.password
                 )
-                .padding(.top, 20)
-                
-                Divider()
+                .textFieldStyle(WhiteBorder())
             }
             
             Spacer()
@@ -43,7 +40,7 @@ struct LoginUserView: View {
                         .frame(maxWidth: .infinity, maxHeight: 60)
                         .foregroundColor(Color.white)
                         .background(Color.blue)
-                        .cornerRadius(10)
+                        .cornerRadius(30)
                 }
             )
         }
