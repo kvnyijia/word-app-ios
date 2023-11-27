@@ -31,6 +31,8 @@
 		39701F702B11A6E50065FD92 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39701F6F2B11A6E50065FD92 /* AppView.swift */; };
 		39701F722B11B2970065FD92 /* SubContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39701F712B11B2970065FD92 /* SubContentView.swift */; };
 		39701F742B11BDF10065FD92 /* MeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39701F732B11BDF10065FD92 /* MeViewModel.swift */; };
+		39701F762B11F2210065FD92 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39701F752B11F2210065FD92 /* Const.swift */; };
+		39701F782B11F68F0065FD92 /* ErrRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39701F772B11F68F0065FD92 /* ErrRes.swift */; };
 		39D76C0A2B0C88F600E23D65 /* WordApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C092B0C88F600E23D65 /* WordApi.swift */; };
 		39D76C0C2B0C8B0100E23D65 /* WordStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */; };
 		39D76C0E2B0C96A000E23D65 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76C0D2B0C96A000E23D65 /* TableView.swift */; };
@@ -83,6 +85,8 @@
 		39701F6F2B11A6E50065FD92 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		39701F712B11B2970065FD92 /* SubContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubContentView.swift; sourceTree = "<group>"; };
 		39701F732B11BDF10065FD92 /* MeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewModel.swift; sourceTree = "<group>"; };
+		39701F752B11F2210065FD92 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		39701F772B11F68F0065FD92 /* ErrRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrRes.swift; sourceTree = "<group>"; };
 		39D76C092B0C88F600E23D65 /* WordApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordApi.swift; sourceTree = "<group>"; };
 		39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordStruct.swift; sourceTree = "<group>"; };
 		39D76C0D2B0C96A000E23D65 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
@@ -204,6 +208,7 @@
 				3956A9C92B097457002CA5D0 /* TableApi.swift */,
 				39D76C092B0C88F600E23D65 /* WordApi.swift */,
 				39701F6B2B11A0B80065FD92 /* Auth.swift */,
+				39701F752B11F2210065FD92 /* Const.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				3956A9C72B08B7AC002CA5D0 /* LoginUser.swift */,
 				39D76C0B2B0C8B0100E23D65 /* WordStruct.swift */,
 				39701F6D2B11A5B70065FD92 /* AuthStruct.swift */,
+				39701F772B11F68F0065FD92 /* ErrRes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -440,7 +446,9 @@
 				39D76C0E2B0C96A000E23D65 /* TableView.swift in Sources */,
 				39701F6E2B11A5B70065FD92 /* AuthStruct.swift in Sources */,
 				39701F722B11B2970065FD92 /* SubContentView.swift in Sources */,
+				39701F782B11F68F0065FD92 /* ErrRes.swift in Sources */,
 				3956A9C12B089CB9002CA5D0 /* MeView.swift in Sources */,
+				39701F762B11F2210065FD92 /* Const.swift in Sources */,
 				39D76C0A2B0C88F600E23D65 /* WordApi.swift in Sources */,
 				39608E3F2B09B19400071EEB /* ItemButton.swift in Sources */,
 				39701F6C2B11A0B80065FD92 /* Auth.swift in Sources */,

@@ -10,6 +10,10 @@ struct LoginUserView: View {
             
             Spacer()
             
+            Text("Welcome Back!")
+                .font(.title)
+                .fontWeight(.black)
+            
             VStack {
                 TextField(
                     //"Login.UsernameField.Title".localized,
@@ -27,6 +31,17 @@ struct LoginUserView: View {
                     text: $viewModel.password
                 )
                 .textFieldStyle(WhiteBorder())
+            }
+            
+            if viewModel.staus == 401 {
+                Text(Const().err_invalid_up)
+                    .foregroundColor(.red)
+            } else if viewModel.staus == -1 {
+                Text(Const().err_sever_nw)
+                    .foregroundColor(.red)
+            } else if viewModel.staus == -2 {
+                Text(Const().err_unknown)
+                    .foregroundColor(.red)
             }
             
             Spacer()
