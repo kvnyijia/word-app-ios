@@ -10,42 +10,50 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
-                    Text("Home")
-                        .font(.title)
-                        .fontWeight(.black)
-                    HStack(spacing: 120) {
-                        Text("Your table")
-                        Button("Create Table") {
-                            show_createTable_modal.toggle()
-                        }
-                        .fullScreenCover(isPresented: $show_createTable_modal, onDismiss: {
-                            sleep(1)
-                            reload_view()
-                        }, content: {
-                            CreateTableView(showModal: self.$show_createTable_modal)
-                        })
-                    }
-                    VStack(alignment: .leading, spacing: 5) {
-                        if let tables = get_tables_res?.tables as? [Table] {
-                            ForEach(tables, id: \.id) { t in
-                                NavigationLink(destination: TableView(table_name: t.name, table_id: t.id)) {
-                                    Text(t.name).frame(maxWidth: .infinity)
-                                }
-                                .buttonStyle(ItemButton())
+                VStack(alignment: .leading, spacing: 5) {
+                    if let tables = get_tables_res?.tables as? [Table] {
+                        ForEach(tables, id: \.id) { t in
+                            NavigationLink(destination: TableView(table_name: t.name, table_id: t.id)) {
+                                Text(t.name).frame(maxWidth: .infinity)
                             }
+                            .buttonStyle(ItemButton())
                         }
-                    }
-                    .onAppear() {
-                        reload_view()
+                    } else {
+                        Spacer()
                     }
                 }
+                .padding()
+                .onAppear() {
+                    reload_view()
+                }
             }
-            .frame(maxWidth: 300)
-        }
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Text("Tables")
+                        .font(.title2)
+                        .fontWeight(.black)
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        show_createTable_modal.toggle()
+                    } label: {
+                        Image(systemName: "plus")
+                            .frame(maxWidth: 30, alignment:.bottomTrailing)
+                            .foregroundColor(.gray)
+                    }
+                    .fullScreenCover(isPresented: $show_createTable_modal, onDismiss: {
+                        sleep(1)
+                        reload_view()
+                    }, content: {
+                        CreateTableView(showModal: self.$show_createTable_modal)
+                    })
+                }
+            }
+        } // NavigationView
     }
     
     func reload_view() {
+        //Auth.shared.logout()
         TableApi().getTables { (res) in
             self.get_tables_res = res
         }

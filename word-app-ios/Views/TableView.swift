@@ -10,32 +10,44 @@ struct TableView: View {
     var show_createWord_modal = false
     
     var body: some View {
-        VStack {
-            Text(table_name)
-                .font(.title)
-                .fontWeight(.black)
-            Button("Add Word") {
-                show_createWord_modal.toggle()
-            }
-            .fullScreenCover(isPresented: $show_createWord_modal, onDismiss: {
-                sleep(1)
-                reload_view()
-            }, content: {
-                CreateWordView(table_id: table_id)
-            })
-            if let words = get_words_res?.words as? [Word] {
-                ForEach(words) { w in
+        ScrollView {
+            VStack(alignment: .leading) {
+                HStack {
+                    Text(table_name)
+                        .font(.title)
+                        .fontWeight(.black)
+                    
+                    Spacer()
+                    
                     Button {
-                        
+                        show_createWord_modal.toggle()
                     } label: {
-                        Text(w.term)
+                        Image(systemName: "plus")
+                            .frame(maxWidth: 30, alignment:.bottomTrailing)
+                            .foregroundColor(.gray)
                     }
-                    .buttonStyle(ItemButton())
+                    .fullScreenCover(isPresented: $show_createWord_modal, onDismiss: {
+                        sleep(1)
+                        reload_view()
+                    }, content: {
+                        CreateWordView(table_id: table_id)
+                    })
+                }
+                if let words = get_words_res?.words as? [Word] {
+                    ForEach(words) { w in
+                        Button {
+                            
+                        } label: {
+                            Text(w.term).frame(maxWidth: .infinity)
+                        }
+                        .buttonStyle(ItemButton())
+                    }
                 }
             }
-        }
-        .onAppear() {
-            reload_view()
+            .padding()
+            .onAppear() {
+                reload_view()
+            }
         }
     }
     

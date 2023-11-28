@@ -12,9 +12,16 @@ struct CreateTableView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            Text("Create table!!")
+            Spacer()
+            
+            Text("Add a new table")
+                .font(.title)
+            
             TextField("enter name for new table", text: $name)
                 .textFieldStyle(WhiteBorder())
+            
+            Spacer()
+            
             Button {
                 TableApi().createTable(name: name) { (res) in
                     isSuccess = res
@@ -25,7 +32,15 @@ struct CreateTableView: View {
                 Text("Create").frame(maxWidth: .infinity)
             }
             .buttonStyle(ActionButton())
-        }.frame(maxWidth: 300)
+            
+            Button {
+                dismiss()
+            } label: {
+                Text("Cancel").frame(maxWidth: .infinity)
+            }
+            .buttonStyle(ActionButton())
+        }
+        .frame(maxWidth: 300)
     }
 }
 

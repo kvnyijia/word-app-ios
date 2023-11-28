@@ -6,16 +6,45 @@ struct MeView: View {
     var viewModel: MeViewModel = MeViewModel()
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            Text("Me")
-                .font(.title)
-                .fontWeight(.black)
-            Text(Auth.shared.getUsername() ?? "not login")
-            Button("Logout") {
-                viewModel.logout()
+        NavigationView {
+            VStack(alignment: .leading) {
+                Text("Me")
+                    .font(.title)
+                    .fontWeight(.black)
+                
+                VStack(alignment: .center, spacing: 20) {
+                    Circle()
+                        .stroke(.gray, lineWidth: 2)
+                        .frame(width: 100)
+                    
+                    if let username = Auth.shared.getUsername() {
+                        Text("@\(username)")
+                    } else {
+                        Text("not login")
+                    }
+                    
+                    Button("Logout") {
+                        viewModel.logout()
+                    }
+                    .buttonStyle(ActionButton())
+                    
+                    Spacer()
+                }
             }
-            .buttonStyle(ActionButton())
-        }
+            .padding(30)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "gear")
+                            .frame(maxWidth: 30, alignment:.bottomTrailing)
+                            .foregroundColor(.gray)
+                    }
+                    
+                }
+            }
+        } // NavigationView
     }
 }
 

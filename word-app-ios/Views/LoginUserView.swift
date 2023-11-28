@@ -52,7 +52,7 @@ struct LoginUserView: View {
                     //Text("Login.LoginButton.Title".localized)
                     Text("Login")
                         .font(.system(size: 24, weight: .bold, design: .default))
-                        .frame(maxWidth: .infinity, maxHeight: 60)
+                        .frame(maxWidth: .infinity, maxHeight: 40)
                         .foregroundColor(Color.white)
                         .background(Color.blue)
                         .cornerRadius(30)

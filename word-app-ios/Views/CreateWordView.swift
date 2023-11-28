@@ -13,6 +13,7 @@ struct CreateWordView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
+            Spacer()
             Text("Add a new word")
                 .font(.title)
             TextField("enter a term", text: $term)
@@ -21,6 +22,9 @@ struct CreateWordView: View {
                 .textFieldStyle(WhiteBorder())
             TextField("enter a picture", text: $picture_url)
                 .textFieldStyle(WhiteBorder())
+            
+            Spacer()
+            
             Button {
                 WordApi().createWord(table_id: table_id, term: term, meaning: meaning, picture_url: picture_url) { res in
                     
@@ -30,7 +34,15 @@ struct CreateWordView: View {
                 Text("Create").frame(maxWidth: .infinity)
             }
             .buttonStyle(ActionButton())
-        }.frame(maxWidth: 300)
+            
+            Button {
+                dismiss()
+            } label: {
+                Text("Cancel").frame(maxWidth: .infinity)
+            }
+            .buttonStyle(ActionButton())
+        }
+        .frame(maxWidth: 300)
     }
 }
 
